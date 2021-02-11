@@ -2,3 +2,29 @@
 body{
     background-color: pink;
 }
+// utility classes
+.d_flex{
+    display: flex;
+}
+// /utility classes
+.product_content{
+    flex-wrap: wrap;
+    // justify-content: center;
+    width: 90%;
+    margin: auto;
+    .title{
+        width: 100%;
+        text-align: center;
+    }
+    .card{
+        
+        border: 5px solid black;
+        width: 20rem;
+        height: 25rem;
+        margin: 2rem;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

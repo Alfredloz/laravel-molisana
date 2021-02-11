@@ -2,3 +2,30 @@ body {
   background-color: pink;
 }
 
+.d_flex {
+  display: flex;
+}
+
+.product_content {
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+}
+
+.product_content .title {
+  width: 100%;
+  text-align: center;
+}
+
+.product_content .card {
+  border: 5px solid black;
+  width: 20rem;
+  height: 25rem;
+  margin: 2rem;
+}
+
+.product_content .card img {
+  width: 100%;
+  height: auto;
+}
+
