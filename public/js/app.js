@@ -19377,7 +19377,18 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // variabili
+
+
+var first = document.getElementById("first_link");
+var second = document.getElementById("second_link"); // /variabili
+
+first.addEventListener("click", function () {
+  console.log('primo link');
+});
+second.addEventListener("click", function () {
+  console.log('secondo link');
+});
 
 /***/ }),
 

@@ -13,12 +13,13 @@
         
     </head>
     <body>
+        <div id="app">
             <header class="header_content d_flex">
                 <img class="logo_page" src="{{ asset('img/logo.png')}}" alt="">
             <nav class="links d_flex">
-                <a href="/">Homepage</a>
-                <a href="products">Products</a>
-                <a href="info">Info</a>
+                <a id="first_link" href="/">Homepage</a>
+                <a id="second_link" href="products">Products</a>
+                <a id="third_link" href="info">Info</a>
             </nav>
             </header>
             @yield('welcome-title')
@@ -28,5 +29,7 @@
                     @yield('product-content')
                 </section>
             </main>
+        </div>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
