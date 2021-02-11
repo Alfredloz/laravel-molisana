@@ -13,11 +13,14 @@
         
     </head>
     <body>
-            <nav class="links">
+            <header class="header_content d_flex">
+                <img class="logo_page" src="{{ asset('img/logo.png')}}" alt="">
+            <nav class="links d_flex">
                 <a href="/">Homepage</a>
                 <a href="products">Products</a>
                 <a href="info">Info</a>
             </nav>
+            </header>
 
             <main>
                 <section>

@@ -1,13 +1,30 @@
 //
-body{
-    background-color: pink;
-}
 // utility classes
 .d_flex{
     display: flex;
 }
 // /utility classes
+// header
+.header_content{
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 20rem;
+    }
+    .links{
+        justify-content: center;
+        align-items: center;
+        background-color: cadetblue;
+        height: 4rem;
+        width: 100%;
+        a{
+            margin: 2rem;
+        }
+    }
+}
+//header
 .product_content{
+    background-image: url('../img/fondo-pag-speciali.jpg');
     flex-wrap: wrap;
     // justify-content: center;
     width: 90%;

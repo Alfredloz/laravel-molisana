@@ -1,5 +1,4 @@
 @extends('layouts.welcome')
-<h1>Products</h1>
 @section('product-content')
     
 <div class="product_content d_flex">
