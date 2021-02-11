@@ -14,7 +14,7 @@
         @endif
         <div class="card">
             <img src="{{ $product['src'] }}" alt="">
-            <h4> {{ $product['titolo'] }}</h4>
+            {{-- <h4> {{ $product['titolo'] }}</h4> --}}
         </div>
     @endforeach
 </div>

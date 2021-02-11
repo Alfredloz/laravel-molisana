@@ -21,8 +21,9 @@
                 <a href="info">Info</a>
             </nav>
             </header>
-
-            <main>
+            @yield('welcome-title')
+            @yield('info-title')
+            <main>               
                 <section>
                     @yield('product-content')
                 </section>
