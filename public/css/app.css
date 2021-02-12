@@ -35,6 +35,10 @@ main {
   background-size: contain;
 }
 
+.item_info {
+  background-color: white;
+}
+
 .product_content {
   flex-wrap: wrap;
   width: 90%;

@@ -16,7 +16,7 @@
             <img src="{{ $product['src'] }}" alt="">
             <div class="overlay_info d_flex">
                 <img src="{{ asset('img/icon.svg')}}" alt="">
-                <h5>{{ $product['titolo'] }}</h5>
+                <h5><a href="products">{{ $product['titolo'] }}</a></h5>
                 <p>cottura: {{ $product['cottura'] }}</p>
                 <p>peso: {{ $product['peso'] }}</p>
             </div>

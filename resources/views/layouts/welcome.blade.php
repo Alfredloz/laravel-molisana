@@ -17,9 +17,9 @@
             <header class="header_content d_flex">
                 <img class="logo_page" src="{{ asset('img/logo.png')}}" alt="">
             <nav class="links d_flex">
-                <a class="{{ Route::currentRouteName() === 'home'? 'active': '' }}" id="first_link" href="/">Homepage</a>
-                <a class="{{ Route::currentRouteName() === 'product'? 'active': '' }}" id="second_link" href="products">Products</a>
-                <a class="{{ Route::currentRouteName() === 'info'? 'active': '' }}" id="third_link" href="info">Info</a>
+                <a class="{{ Route::currentRouteName() === 'home'? 'active': '' }}" id="first_link" href="{{ route('home') }}">Homepage</a>
+                <a class="{{ Route::currentRouteName() === 'product'? 'active': '' }}" id="second_link" href="{{ route('product') }}">Products</a>
+                <a class="{{ Route::currentRouteName() === 'info'? 'active': '' }}" id="third_link" href="{{ route('info') }}">Info</a>
             </nav>
             </header>
             @yield('welcome-title')
@@ -27,7 +27,11 @@
             <main>               
                 <section>
                     @yield('product-content')
+                    <div class="item_info">
+                    @yield('item-card')
+                    </div>
                 </section>
+                
             </main>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
