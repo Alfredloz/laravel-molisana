@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>La Molisana</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
@@ -17,9 +17,9 @@
             <header class="header_content d_flex">
                 <img class="logo_page" src="{{ asset('img/logo.png')}}" alt="">
             <nav class="links d_flex">
-                <a id="first_link" href="/">Homepage</a>
-                <a id="second_link" href="products">Products</a>
-                <a id="third_link" href="info">Info</a>
+                <a class="{{ Route::currentRouteName() === 'home'? 'active': '' }}" id="first_link" href="/">Homepage</a>
+                <a class="{{ Route::currentRouteName() === 'product'? 'active': '' }}" id="second_link" href="products">Products</a>
+                <a class="{{ Route::currentRouteName() === 'info'? 'active': '' }}" id="third_link" href="info">Info</a>
             </nav>
             </header>
             @yield('welcome-title')

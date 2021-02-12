@@ -19388,7 +19388,7 @@ first.addEventListener("click", function () {
 });
 second.addEventListener("click", function () {
   console.log('secondo link');
-});
+}); // !per vedere il percorso finale del url window.location.pathname
 
 /***/ }),
 

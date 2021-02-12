@@ -14,7 +14,12 @@
         @endif
         <div class="card">
             <img src="{{ $product['src'] }}" alt="">
-            {{-- <h4> {{ $product['titolo'] }}</h4> --}}
+            <div class="overlay_info d_flex">
+                <img src="{{ asset('img/icon.svg')}}" alt="">
+                <h5>{{ $product['titolo'] }}</h5>
+                <p>cottura: {{ $product['cottura'] }}</p>
+                <p>peso: {{ $product['peso'] }}</p>
+            </div>
         </div>
     @endforeach
 </div>

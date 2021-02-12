@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('homepage.homepage');
-});
+})->name('home');
+
 Route::get('products', function () {
     $data = [
         [
@@ -141,9 +142,9 @@ Route::get('products', function () {
         ]
      ];
     return view('products.products', compact('data'));
-});
+})->name('product');
 Route::get('info', function () {
     return view('info.info');
-});
+})->name('info');
 
 
